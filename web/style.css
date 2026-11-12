@@ -1,0 +1,270 @@
+/* ==========================================================
+   BERLIN SOUND MAP
+   Base styling
+   ========================================================== */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    background: #0B0B0B;
+
+    overflow: hidden;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+
+/* ----------------------------------------------------------
+   Map
+   ---------------------------------------------------------- */
+
+#map {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ----------------------------------------------------------
+   Title
+   ---------------------------------------------------------- */
+
+#title {
+    position: absolute;
+
+    top: 30px;
+    left: 40px;
+
+    z-index: 10;
+
+    color: #FFFFFF;
+
+    pointer-events: none;
+
+    text-shadow:
+        0 2px 12px rgba(0, 0, 0, 0.8);
+}
+
+
+/* Day 11 label */
+
+#day-label {
+    margin-bottom: 9px;
+
+    color: #888888;
+
+    font-size: 10px;
+
+    font-weight: 500;
+
+    letter-spacing: 2px;
+
+    line-height: 1.2;
+}
+
+
+/* Main title */
+
+#title h1 {
+    margin: 0;
+
+    color: #FFFFFF;
+
+    font-size: 32px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    line-height: 1;
+}
+
+
+/* Subtitle */
+
+#title p {
+    max-width: 430px;
+
+    margin: 11px 0 0 1px;
+
+    color: #A8A8A8;
+
+    font-size: 12px;
+
+    font-weight: 400;
+
+    letter-spacing: 0.4px;
+
+    line-height: 1.5;
+}
+
+
+/* ----------------------------------------------------------
+   Legend
+   ---------------------------------------------------------- */
+
+#legend {
+    position: absolute;
+
+    top: 32px;
+    right: 40px;
+
+    z-index: 10;
+
+    min-width: 150px;
+
+    padding: 15px 17px;
+
+    background:
+        rgba(8, 8, 8, 0.78);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.12);
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.25);
+
+    backdrop-filter: blur(8px);
+
+    color: #FFFFFF;
+
+    pointer-events: none;
+}
+
+
+/* Legend heading */
+
+.legend-title {
+    margin-bottom: 13px;
+
+    color: #777777;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+/* Legend item */
+
+.legend-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom: 9px;
+
+    color: #D0D0D0;
+
+    font-size: 12px;
+
+    line-height: 1.2;
+}
+
+
+/* Remove bottom margin from final item */
+
+.legend-item:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ----------------------------------------------------------
+   Legend symbols
+   ---------------------------------------------------------- */
+
+.legend-symbol {
+    display: inline-block;
+
+    width: 9px;
+    height: 9px;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 8px currentColor;
+}
+
+
+/* Nightclub */
+
+.legend-symbol.nightclub {
+    background: #FF2BD6;
+
+    color: #FF2BD6;
+}
+
+
+/* Live Music */
+
+.legend-symbol.live {
+    background: #FF9F43;
+
+    color: #FF9F43;
+}
+
+
+/* Theatre */
+
+.legend-symbol.theatre {
+    background: #27D9FF;
+
+    color: #27D9FF;
+}
+
+
+/* ----------------------------------------------------------
+   Responsive layout
+   ---------------------------------------------------------- */
+
+@media (max-width: 700px) {
+
+    #title {
+        top: 20px;
+        left: 20px;
+    }
+
+    #title h1 {
+        font-size: 24px;
+
+        letter-spacing: 2px;
+    }
+
+    #title p {
+        max-width: 300px;
+
+        font-size: 11px;
+    }
+
+    #day-label {
+        font-size: 9px;
+
+        letter-spacing: 1.5px;
+    }
+
+    #legend {
+        top: auto;
+        right: 20px;
+        bottom: 25px;
+
+        padding: 12px 14px;
+    }
+
+    .legend-item {
+        font-size: 11px;
+    }
+}

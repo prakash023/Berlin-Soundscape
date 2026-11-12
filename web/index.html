@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berlin Sound Map</title>
+    
+    <!-- MapLibre CSS & JS -->
+    <link href="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.css" rel="stylesheet" />
+    <script src="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.js"></script>
+    
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="map"></div>
+
+    <!-- Title Overlay -->
+    <!-- Title Overlay -->
+    <div id="title">
+        <div id="day-label">#30DayMapChallenge · DAY 11 · SENSES: SOUND</div>
+        <h1>HOW LIVELY IS BERLIN?</h1>
+        <p>A cultural soundscape of nightclubs, live music, and theatre.</p>
+    </div>
+
+    <!-- Legend Overlay -->
+    <div id="legend">
+        <div class="legend-title">SOUND CATEGORIES</div>
+        <div class="legend-item">
+            <span class="legend-symbol nightclub"></span> Nightclubs
+        </div>
+        <div class="legend-item">
+            <span class="legend-symbol live"></span> Live Music
+        </div>
+        <div class="legend-item">
+            <span class="legend-symbol theatre"></span> Theatre
+        </div>
+    </div>
+
+    <!-- Your JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
